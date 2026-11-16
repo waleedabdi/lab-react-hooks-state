@@ -1,3 +1,32 @@
-/* TODO (optional): Define styles for dark mode */
+.app {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #213547;
+  background-color: #ffffff;
+  transition:
+    color 200ms ease,
+    background-color 200ms ease;
+}
 
-/* TODO (optional): Ensure text and background colors adjust for dark mode */
+.darkMode {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.app button,
+.app select {
+  margin: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.app button:hover,
+.app select:hover {
+  opacity: 0.8;
+}
